@@ -9,11 +9,52 @@
     padding: 0;
 }
 
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  header .container img {
+    height: 40px;
+    cursor: pointer;
+    filter: brightness(200%);
+  }
+
+  header .container img:hover {
+    opacity: 0,8;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem; 
+    padding: 1.5rem;
+    transition: all 250ms linear 0s;
+  }
+  
+  header nav ul li a:hover {
+    background: rgba(255,255,255, 0.15)
+  }
+
 header{
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: #035252;
 }
 
 .img-wrapper{
@@ -21,6 +62,7 @@ header{
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
 }
 
 .img-wrapper img{
@@ -42,20 +84,30 @@ header{
 
 .banner{
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 8%;
+    text-align: center;
+    margin: auto;
+    text-shadow: #17181b;
+}
+
+.banner img{
+    height: 200px;
+    opacity: 0;
+    animation: moveBanner 1.3s 0.5s forwards;
+    filter: brightness(200%);
+    margin: auto;
 }
 
 .banner h1{
     color: #ffffff;
     font-size: 3.5rem;
     font-family: "Lato", serif;
-    font-weight: 700;
+    font-weight: 900;
     text-shadow: .2rem, .3rem, 2px, rgba(0, 0, 0, 0.4);
     line-height: 3.5rem;
     margin-bottom: 2rem;
     opacity: 0;
-    animation: moveBanner 1s 0.5s forwards;
+    animation: moveBanner 1.3s 0.7s forwards;
 }
 
 .banner p{
@@ -65,7 +117,7 @@ header{
     text-shadow: .2rem, .2rem, rgba(0, 0, 0, 0.4);
     margin-bottom: 2rem;
     opacity: 0;
-    animation: moveBanner 1s 0.7s forwards;
+    animation: moveBanner 1.3s 0.9s forwards;
 }
 
 .banner button{
@@ -83,7 +135,7 @@ header{
     border-radius: 5px;
     cursor: pointer;
     opacity: 0;
-    animation: moveBanner 1s 0.9s forwards;
+    animation: moveBanner 1.3s 1.2s forwards;
 }
 
 .banner button:hover{
@@ -99,3 +151,49 @@ header{
         opacity: 1;
     }
 }
+
+footer{
+    width: 100%;
+    background-color: #17181b;
+    display: table;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .footer-content{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .footer-content h1{
+    font-family: "Lato", serif;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .footer-content p{
+    font-family: "Lato", serif;
+    color: #a7a7a7;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  #link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .8rem;
+    box-shadow:  0 0.1rem 0.6rem #00000009;
+  }
