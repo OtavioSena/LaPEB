@@ -108,7 +108,6 @@ header{
     opacity: 0;
     animation: moveBanner 1.3s 0.5s forwards;
     filter: brightness(200%);
-    margin: auto;
 }
 
 .banner h1{
