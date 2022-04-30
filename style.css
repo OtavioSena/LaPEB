@@ -87,7 +87,6 @@ header{
     top: 8%;
     text-align: center;
     margin: auto;
-    text-shadow: #17181b;
 }
 
 .banner img{
@@ -181,7 +180,7 @@ footer{
     text-align: center;
   }
   
-  #link-topo{
+  link-topo{
     position: fixed;
     right: 3rem;
     bottom: 2rem;
